@@ -11,7 +11,7 @@ body {
 .navbar {
     padding: 20px 0;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,6 +75,7 @@ body {
 }
 
 .hero-content {
+    margin: 1.5rem;
     padding: 70px 0;
     flex: 1;
 }
@@ -173,10 +174,8 @@ body {
 }
 
 /* Container */
-.container {
-    width: 1280px;       
-    margin: 0 auto;          
-    padding: 4rem 1rem;      
+.container {       
+    margin: 1.5rem;     
 }
 
 .trusted {
