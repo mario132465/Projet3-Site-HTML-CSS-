@@ -1081,3 +1081,187 @@ body {
 .footer-credit-name {
     font-weight: 600;
 }
+/* Media Queries pour le Responsive */
+@media (max-width: 1200px) {
+    .hero-section,
+    .featuresContainer,
+    .SkilineContainer,
+    .integrations,
+    .testimonial {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    /* Navigation */
+    .nav-links {
+        gap: 15px;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-title {
+        width: 100%;
+        font-size: 2.5rem;
+    }
+
+    .girl {
+        right: 0;
+        width: 80%;
+    }
+
+    .calendar, .red-box, .ux-class, .congrats {
+        transform: scale(1);
+    }
+
+    /* Features Grid */
+    .featuresGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Classroom Section */
+    .classroomInterface {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .interfaceImage,
+    .interfaceDescription {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Navigation */
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Hero Section */
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    /* Features Grid */
+    .featuresGrid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Class Options */
+    .class-options {
+        flex-direction: column;
+    }
+
+    /* Tools Sections */
+    .section-tools,
+    .section-assessments,
+    .section-management,
+    .section-discussions {
+        flex-direction: column;
+    }
+
+    .text1-section,
+    .text2-section,
+    .text3-section,
+    .text4-section,
+    .image1-section,
+    .image2-section,
+    .image3-section,
+    .image4-section {
+        width: 100%;
+    }
+
+    /* Integrations */
+    .integrations {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .integrations-image-section,
+    .integrations-text-section {
+        width: 80%;
+    }
+
+    /* Testimonial */
+    .testimonial {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonial-comment-section {
+        position: static;
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .comment-card {
+        position: static;
+    }
+
+    /* News */
+    .news-container {
+        flex-direction: column;
+    }
+
+    .main-news {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Elements cachés sur mobile */
+    .calendar, .red-box, .ux-class, .congrats {
+        display: none;
+    }
+
+    /* Hero Section */
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    /* Features Card */
+    .featureCard {
+        padding: 20px;
+    }
+
+    .featureIcon {
+        margin: -40px auto 15px;
+    }
+
+    /* Footer */
+    .footer-header {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .footer-subtitle {
+        border-left: none;
+        padding-left: 0;
+        margin-top: 1rem;
+    }
+}
+
+/* Ajouts généraux pour le responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0 15px;
+}
